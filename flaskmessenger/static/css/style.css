@@ -10,3 +10,30 @@ html {
     padding: 0;
     border: 0;
 }
+
+/* footer styles for all pages */
+
+footer {
+    height: 200px;
+    background-color: #039be5;
+    box-shadow: 0 0 5px #000000;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
+}
+
+.social-networks i:hover {
+    color: #f16c6b;
+}
