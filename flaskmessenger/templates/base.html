@@ -9,7 +9,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <!-- if/else conditional to display title of specific page not just the default app title -->
+    {% if title %}
+    <title>Flask Messenger - {{ title }}</title>
+    {% else %}
     <title>Flask Messenger</title>
+    {% endif %}
 </head>
 <body>
 
