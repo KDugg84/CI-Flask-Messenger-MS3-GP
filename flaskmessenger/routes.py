@@ -39,7 +39,8 @@ def register():
     form = RegistrationForm()
     # conditional to validate a successful registration
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!')
+        # 'alert-message' css class to help validate a successful registration 
+        flash(f'Account created for {form.username.data}!', 'alert-message')
         return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
@@ -47,4 +48,14 @@ def register():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    # conditional to validate successful login
+    if form.validate_on_submit():
+        # fake data to create a successful login
+        if form.email.data == 'admin@gmail.com' and form.password.data == 'password':
+            # 'success' css class to help validate a successful login
+            flash('You have been logged in!', 'success')
+            return redirect(url_for('home'))
+        else:
+            # 'warning' css class to highlight an unsuccessful login attempt 
+            flash('Login Unsuccessful! Please check username and password', 'warning')
     return render_template("login.html", title='Login', form=form)
