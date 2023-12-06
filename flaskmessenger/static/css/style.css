@@ -50,7 +50,7 @@ a.message-title:hover {
     text-decoration: none;
 }
 
-/* custom styles for registration form */
+/* custom styles for registration and login form */
 
 .register-login-form {
     margin-top: 50px;
@@ -106,12 +106,32 @@ form > h5 {
     color: #dc3545;
 }
 
-/* flash message alert*/
+/* flash message alerts*/
 
 .alert-message {
     text-align: center;
     color: #fafafa;
     background-color: #66bb6a;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.alert-message > .success {
+    text-align: center;
+    color: #fafafa;
+    background-color: #66bb6a;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.alert-message > .success > .warning {
+    text-align: center;
+    color: #fafafa;
+    background-color: #ff0000;
     padding: 5px;
     margin-top: 20px;
     border: 1px solid;
