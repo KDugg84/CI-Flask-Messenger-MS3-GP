@@ -1,6 +1,7 @@
 from flask import render_template, url_for, flash, redirect
 from flaskmessenger.forms import RegistrationForm, LoginForm
 from flaskmessenger import app, db
+from flaskmessenger.models import User, Post
 
 # dummy date to iterate through using jinja for loop.
 posts = [
