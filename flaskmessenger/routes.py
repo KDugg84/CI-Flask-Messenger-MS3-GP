@@ -74,3 +74,17 @@ def login():
             # 'warning' css class to highlight an unsuccessful login attempt 
             flash('Login Unsuccessful! Please check email and password', 'warning')  
     return render_template("login.html", title='Login', form=form)
+
+
+@app.route("/logout")
+def logout():
+    # logout route based on the logout_user class imported from login_user extension
+    logout_user()
+    return redirect(url_for('home'))
+
+
+@app.route("/account")
+# login required decorator added to route from the imported login_user extension
+@login_required
+def account():
+    return render_template('account.html', title='Account')
