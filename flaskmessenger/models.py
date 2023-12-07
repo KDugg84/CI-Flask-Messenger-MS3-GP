@@ -1,8 +1,15 @@
-from flaskmessenger import db
+from flaskmessenger import db, login_manager
 from datetime import datetime
+from flask_login import UserMixin
 
 
-class User(db.Model):
+# function with a decorator used for reloading the user from the user id
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+
+class User(db.Model, UserMixin):
     # schema for the User model
     # unique id for each user based on a primary key
     id = db.Column(db.Integer, primary_key=True)
