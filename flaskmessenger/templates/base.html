@@ -27,8 +27,13 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
+                    {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('account') }}">Account</a></li>
+                    <li><a href="{{ url_for('logout') }}">logout</a></li>
+                    {% else %}
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -37,8 +42,13 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('account') }}">Account</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
             <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
+            {% endif %}
         </ul>
     </header>
 
