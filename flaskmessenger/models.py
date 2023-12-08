@@ -16,12 +16,12 @@ class User(db.Model, UserMixin):
 
     # we want user accounts to be unique
     username = db.Column(db.String(20), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    email = db.Column(db.String(100), unique=True, nullable=False)
 
     # allows users to register with a default profile picture
-    image_file = db.Column(db.String(20), nullable=False,
-                           default='default.jpg')
-    password = db.Column(db.String(60), nullable=False)
+    profile_image = db.Column(db.String(20), nullable=False,
+                           default='profile.png')
+    password = db.Column(db.String(50), nullable=False)
 
     # post attribute has a relationship with the Post Model
     # backref 'author' attribute allows to get the user who created the post
