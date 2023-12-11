@@ -11,8 +11,17 @@ html {
     border: 0;
 }
 
+/* sticky footer styles*/
+
 body {
     background-color: #eceff1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* custom styles for home page message boards*/
@@ -142,6 +151,37 @@ form > h5 {
 
 .info {
     background-color: #17a2b8;
+}
+
+/* account page styles */
+
+.account-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.account-img {
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.account-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/* styles for new post content page*/
+
+.new-post-form {
+    margin-top: 50px;
+    color: #777777;
+    background-color: #fafafa;
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid #777777;
+    border-radius: 10px;
 }
 
 /* footer styles for all pages */
