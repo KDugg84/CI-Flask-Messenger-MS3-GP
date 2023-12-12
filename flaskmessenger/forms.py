@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from flaskmessenger.models import User
 
@@ -45,4 +45,15 @@ class LoginForm(FlaskForm):
     # remember cookie to keep users logged in after browser is closed
     remember = BooleanField('Remember Me')
 
-    submit = SubmitField('Login Here')
+    submit = SubmitField('Login Here')  
+
+
+class NewPost(FlaskForm):
+    # attribute to stringfield class to act as the title of the new post
+    title = StringField('Title', validators=[DataRequired()])
+
+    # attribute of textareafield where post content will be located
+    content = TextAreaField('Content', validators=[DataRequired()])
+
+    # a submit button attribute to send new post content
+    submit_new_post = SubmitField('Send New Post!')
