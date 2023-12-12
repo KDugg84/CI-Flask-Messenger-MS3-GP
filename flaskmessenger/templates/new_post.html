@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<form class="new-post-form" action="" method="POST">
+    {{ form.hidden_tag() }}
+    <h5>{{ legend }}</h5>
+    <div>
+        <!-- takes post_title variable from the forms.py file -->
+        {{ form.title.label(class="form-label") }}
+
+        {% if form.title.errors %}
+        {{ form.title(class="text-input") }}
+
+        <div class="invalid">
+            {% for error in form.title.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+
+        {% else %}
+        {{ form.title(class="text-input") }}
+        {% endif %}
+    </div>
+
+    <div>
+        <!-- takes text_field variable from the forms.py file -->
+        {{ form.content.label(class="form-label") }}
+
+        {% if form.content.errors %}
+        {{ form.content(class="text-input") }}
+
+        <div class="invalid">
+            {% for error in form.content.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+
+        {% else %}
+        {{ form.content(class="text-input") }}
+        {% endif %}
+    </div>
+
+    <div>
+        <!-- takes from submit_new_post variable to send a new post -->
+        {{ form.submit_new_post(class="btn-submit") }}
+    </div>
+{% endblock content %}
