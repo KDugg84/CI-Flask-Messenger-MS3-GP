@@ -1,24 +1,8 @@
-from flask import render_template, url_for, flash, redirect, request
-from flaskmessenger.forms import RegistrationForm, LoginForm
+from flask import render_template, url_for, flash, redirect, request, abort
+from flaskmessenger.forms import RegistrationForm, LoginForm, NewPost
 from flaskmessenger import app, db, bcrypt
 from flaskmessenger.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
-
-# dummy date to iterate through using jinja for loop.
-posts = [
-    {
-        'author': 'John Doe',
-        'title': 'Message 1',
-        'content': 'First post content',
-        'date_posted': 'November 27th, 2023'
-    },
-    {
-        'author': 'Jane Doe',
-        'title': 'Message 2',
-        'content': 'Second post content',
-        'date_posted': 'November 27th, 2023'
-    }
-]
 
 
 @app.route("/")
@@ -28,6 +12,7 @@ def base():
 
 @app.route("/home")
 def home():
+    posts = Post.query.all()
     return render_template('home.html', posts=posts)
 
 
@@ -87,4 +72,44 @@ def logout():
 # login required decorator added to route from the imported login_user extension
 @login_required
 def account():
-    return render_template('account.html', title='Account')
+    # variable to add the default 'profile.png' image file when a user creates an account   
+    profile_image = url_for('static', filename='img/' + current_user.profile_image)
+    return render_template('account.html', title='Account', profile_image=profile_image)
+
+
+@app.route("/new/post", methods=['GET', 'POST'])
+@login_required
+def new_post():
+    form = NewPost()
+    if form.validate_on_submit():
+        post = Post(title=form.title.data, content=form.content.data, author=current_user)
+        db.session.add(post)
+        db.session.commit()
+        flash('Your post has been sent!', 'alert-message')
+        return redirect(url_for('home'))
+    return render_template('new_post.html', title='New Posts',legend='New Post!', form=form)
+
+
+@app.route("/posts/<int:post_id>")
+def posts(post_id):
+    post = Post.query.get(post_id)
+    return render_template('posts.html', title=post.title, post=post)
+
+
+@app.route("/posts/<int:post_id>/edit", methods=['GET', 'POST'])
+@login_required
+def edit_posts(post_id):
+    post = Post.query.get(post_id)
+    if post.author != current_user:
+        abort(403)
+    form = NewPost()
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.content = form.content.data
+        db.session.commit()
+        flash('Your post has been updated!', 'alert-message')
+        return redirect(url_for('posts', post_id=post.id))
+    elif request.method == 'GET':
+        form.title.data = post.title
+        form.content.data = post.content
+    return render_template('new_post.html', title='Update Posts', legend='Update Post!', form=form)       
