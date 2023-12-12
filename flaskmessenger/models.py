@@ -29,7 +29,7 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         # __repr__ to represent itself in the form of a string
-        return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+        return f"User('{self.username}', '{self.email}', '{self.profile_image}')"
 
 
 class Post(db.Model):
