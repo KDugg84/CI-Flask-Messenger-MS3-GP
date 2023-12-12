@@ -80,8 +80,10 @@ def account():
 @app.route("/new/post", methods=['GET', 'POST'])
 @login_required
 def new_post():
+    # instance of NewPost class from forms.py
     form = NewPost()
     if form.validate_on_submit():
+        # variable to populate the date to the NewPost class based on existing db
         post = Post(title=form.title.data, content=form.content.data, author=current_user)
         db.session.add(post)
         db.session.commit()
@@ -92,6 +94,7 @@ def new_post():
 
 @app.route("/posts/<int:post_id>")
 def posts(post_id):
+    # variable to query a user's existing post 
     post = Post.query.get(post_id)
     return render_template('posts.html', title=post.title, post=post)
 
@@ -112,4 +115,16 @@ def edit_posts(post_id):
     elif request.method == 'GET':
         form.title.data = post.title
         form.content.data = post.content
-    return render_template('new_post.html', title='Update Posts', legend='Update Post!', form=form)       
+    return render_template('new_post.html', title='Update Posts', legend='Update Post!', form=form)
+
+
+@app.route("/posts/<int:post_id>/delete", methods=['POST'])
+@login_required
+def delete_posts(post_id):
+    post = Post.query.get(post_id)
+    if post.author != current_user:
+        abort(403)
+    db.session.delete(post)
+    db.session.commit()
+    flash('Your post has been deleted!', 'alert-message')
+    return redirect(url_for('home'))               
