@@ -4,6 +4,11 @@
     <div class="content-section">
         <img class="account-img" src="{{ url_for('static', filename='img/' + post.author.profile_image) }}">
         <div class="content-metadata">
+            {% if post.author == current_user %}
+            <div>
+                <a class="btn-update" href="{{ url_for('edit_posts', post_id=post.id) }}">Update Post?</a>
+            </div>
+            {% endif %}
             <a href="#">{{ post.author.username }}</a>
             <small>{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
         </div>
