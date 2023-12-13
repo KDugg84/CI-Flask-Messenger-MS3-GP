@@ -50,7 +50,19 @@ Add a link to the live site here.
 
 ## User Experience (UX)
 
+The best (intuitive) UX creates single-use learning.
+
 ### Main Objectives
+
+Design and create a messaging site/application which demonstrates the use of libraries and frameworks which are available to developers.
+
+My three main objectives were:
+
+* I wanted to make the site easily accessible and intuitively navigated for the users.
+
+* The use of the backend framework allows users to create an account, post messages, read other user's posts on the home page, update posts if they wish to as well as being able to delete their posts.
+
+* I used ElephantSQL to store the PostgreSQL database for this project.
 
 ### User Stories
 
