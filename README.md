@@ -140,6 +140,14 @@ After a user has successfully logged in they will see a new link in the navbar c
 
 ### Future Implementations
 
+* For users to be able to comment on other user's posts.
+
+* To be able to like or subscribe to a particular user.
+
+* For a user to be able to post links to other pages.
+
+* for users to be able to post photos or video content not just text.
+
 ### Accessibility
 
 ## Technologies Used
