@@ -150,6 +150,14 @@ After a user has successfully logged in they will see a new link in the navbar c
 
 ### Accessibility
 
+Whilst coding the site I have ensured that the site is accesible for all. This is achieve by using:
+
+* Google Dev Tools to check contrast of items.
+
+* Semantic HTML.
+
+* Aria Labels to hightlight areas for users who require the use of a screen reader.
+
 ## Technologies Used
 
 ### Languages Used
