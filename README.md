@@ -169,6 +169,21 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 ### Frameworks, Libraries & Programs Used
 
+* [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes for the website.
+* [Gitpod](https://www.gitpod.io/) the vast majority of my time was spent inside GitPod's VSCode Cloud IDE.
+* Google Dev Tools was used to identify and resolve problems related to responsiveness and appearance.
+* [Github](https://github.com/) was used to store my project in a repository.
+* [Git](https://git-scm.com/) was used for version control.
+* [Google](https://google.com) for research and problem solving.
+* [Stack Overflow](https://stackoverflow.com/) for research and problem solving.
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/) the main Python framework used throughout the project.
+* [WTForms](https://flask.palletsprojects.com/en/3.0.x/patterns/wtforms/) was used to help with form validation.
+* [Bcrypt](https://pypi.org/project/bcrypt/) a hash function designed for password hashing and safe storing in the backend of applications.
+* [PEP8 Validator](https://pep8ci.herokuapp.com/) Used to check python code for errors
+* [ElephandSQL](https://www.elephantsql.com/) Used to store PostgreSQL database.
+* [Heroku](https://id.heroku.com/) Used to deploy the project
+* [Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
+
 ## Deployment & Local Development
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
