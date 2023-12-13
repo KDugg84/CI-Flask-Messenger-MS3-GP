@@ -162,6 +162,11 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 ### Languages Used
 
+* HTML5
+* CSS3
+* JavaScript ES6
+* Python
+
 ### Frameworks, Libraries & Programs Used
 
 ## Deployment & Local Development
