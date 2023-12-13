@@ -84,7 +84,11 @@ My three main objectives were:
 
 ### Colour Scheme
 
+The colour scheme for this project was based somewhat on Code Institute's Task Manager walkthrough mini project which has a very neutral theme, alot of white space and light blue with the action buttons using more bright colours to help with site navigation.
+
 ### Typography
+
+The main font used throughout the project is the default style that comes with the WT-Forms Flask extension.
 
 ### Imagery
 
