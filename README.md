@@ -102,6 +102,42 @@ Add the images or links for your wireframes here.
 
 ### General features on each page
 
+The general features of most of the app's pages include: 
+
+* A navigation bar which is responsive across all device screens.
+
+* A logo which directs the user back to the home page when clicked.
+
+* A footer with font awesome icons for social media links.
+
+Other features included in the 'Register' and 'Login' pages are:
+
+* The register page includes form fields to allow the user to add their details to create an account such as their username, email address, a password and to confirm that password. A user cannot leave the form fields blank as the form will not post and the user is then prompted to fill in the required information.
+
+* the register page includes a button which 'POSTs' the user's details to the database.
+
+* The register page form includes a link to the login page at the bottom if they are already a user.
+
+* After a user has created their account they are automatically redirected to the login page to sign in.
+
+* The login page only requires a user to login with their username and password.
+
+* As with the register page the login form includes a link at the bottom asking the user if they need an account in case they have clicked on the wrong page by accident.
+
+After a user has successfully logged in they will see a new link in the navbar called 'New Posts':
+
+* The new posts form has two fields one for 'Title' and for 'Content'.
+
+* Once a user has submitted a new post they can then view that post on the home page along with other posts made by other users.
+
+* A user then has the option to update a post by clicking on the post title where they will see two new buttons marked 'Update Post' and 'Delete Post'.
+
+* If the user wishes to update a post they simply click on the 'Update Post' button where they are redirected back to the new post form to change or update that post's title and content and resubmit the post.
+
+* Those changes will then be shown on the home page. 
+
+* If a user wishes to delete a post they go through the same procedure as before by clicking on the post's title and when they click 'Delete Post' they will be prompted by a modal asking if they want to delete that post and if the user clicks 'Delete Post' on the modal that post will be deleted from the home page and the database.
+
 ### Future Implementations
 
 ### Accessibility
