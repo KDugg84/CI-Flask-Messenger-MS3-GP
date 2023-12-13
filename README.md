@@ -92,6 +92,8 @@ The main font used throughout the project is the default style that comes with t
 
 ### Imagery
 
+Imagery does not really feature with this application other than the default profile picture that is added to a user's account when they sigh up.
+
 ### Wireframes
 
 Add the images or links for your wireframes here.
