@@ -66,6 +66,20 @@ My three main objectives were:
 
 ### User Stories
 
+* First Time Visitor Goals:
+    * To understand how the site works and what its about.
+
+    * How to navigate the site.
+
+    * Create an account and start posting new messages.
+
+* Returning Visitor Goals:
+    * Log in and out of their accounts.
+
+    * Read posts made by other users.
+
+    * Update and delete posts made by the user.  
+
 ## Design
 
 ### Colour Scheme
