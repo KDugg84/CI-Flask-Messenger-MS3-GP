@@ -184,26 +184,6 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 * [Heroku](https://id.heroku.com/) Used to deploy the project
 * [Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
 
-## Deployment & Local Development
-
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
-### Deployment
-
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
-
-### Local Development
-
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
-#### How to Fork
-
-Place instructions on how to fork your project here.
-
-#### How to Clone
-
-Place instructions on how to clone your project here.
-
 ## Testing
 
 Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
@@ -211,6 +191,67 @@ Start as you mean to go on - and get used to writing a TESTING.md file from the 
 Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+
+## Deployment & Local Development
+
+### Deployment
+
+The website/application is stored using GitHub for data and version control. To do this you follow these steps:
+
+* After each addition, change or removal of code and by utilizing the IDE's terminal commands simply type:
+    * git add.
+
+    * git commit -m and include a git commit message with a brief description of what this particular commit envolves.
+
+    * git push.
+
+Following the above process allows you to view the updates made to the projects repository on GitHub.    
+
+### Local Development
+
+#### How to Fork
+
+Forking is the process of creating a copy of the original repository. The process allows a developer to make any changes without affecting the main repo.
+
+To do this:
+
+* Search for the Github repo you want to copy.
+
+* Select the "Fork" button located in the top right corner which is located under your profile icon.
+
+* Once completed, you will now have your own version of that repo to make changes to.
+
+#### How to Clone
+
+To copy a Github repository:
+
+* First navigate to the repository you wish to copy.
+
+* Click on the "Code" button (which has a download icon) and copy the link provided.
+
+* In the Gitpod terminal, navigate to the directory where you want to place the clone. Then, type "git clone" and paste the link you copied earlier and press enter.
+
+* Another way to push a cloned repository to a new Gitpod workspace can be done through the use of a Gitpod extension installed in your prefered browser, in my case Google Chrome. This browser extension will add a green Gitpod button to your Github account and will be visible on every repository created, cloned or searched for.
+
+#### Repository Deployment via Heroku
+
+* Login to Heroku, Open the Heroku dashboard and click on New and then select "Create New App" from the drop-down menu.
+
+* On the next page choose a name for your app (same as the project name), choose a region then click "Create App".
+
+* On the settings tab click on Reveal Config Vars and add the Key Port and the value 8000, Debug Key should be set to False and also include the URL address of the Postgres Database hosting platform for storing the database. 
+
+#### Deployment of The App
+
+* Click on the Deploy tab and select Github - "Connect to GitHub".
+
+* Enter the name of the repository and click "Search".
+
+* Choose the repository that contains the correct files and click "Connect".
+
+* There is a choice of either manual or automatic deployment where the app is updated when changes are pushed to the project's GitHub repo.
+
+* Once the deployment method has been chosen the app will then be built and can be launched by clicking the "Open App" button which should appear below the build information window, alternatively there is another button located in the top right of the page.
 
 ## Credits
 
