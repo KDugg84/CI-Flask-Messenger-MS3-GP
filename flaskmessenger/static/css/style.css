@@ -11,7 +11,7 @@ html {
     border: 0;
 }
 
-/* sticky footer styles*/
+/* sticky footer styles */
 
 body {
     background-color: #eceff1;
@@ -24,7 +24,7 @@ main {
     flex: 1 0 auto;
 }
 
-/* custom styles for home page message boards*/
+/* custom styles for home page message boards */
 
 .content-section {
     background: #fafafa;
@@ -115,7 +115,7 @@ form > h5 {
     color: #dc3545;
 }
 
-/* flash message alerts*/
+/* flash message alerts */
 
 .alert-message {
     text-align: center;
@@ -172,7 +172,7 @@ form > h5 {
     flex: 1;
 }
 
-/* styles for new post content page*/
+/* styles for new post content page */
 
 .new-post-form {
     margin-top: 50px;
