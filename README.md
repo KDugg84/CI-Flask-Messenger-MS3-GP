@@ -67,6 +67,7 @@ My three main objectives were:
 ### User Stories
 
 * First Time Visitor Goals:
+
     * To understand how the site works and what its about.
 
     * How to navigate the site.
@@ -74,6 +75,7 @@ My three main objectives were:
     * Create an account and start posting new messages.
 
 * Returning Visitor Goals:
+
     * Log in and out of their accounts.
 
     * Read posts made by other users.
@@ -186,15 +188,76 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+### Validation
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+### Bugs and Errors
 
+#### Known Issues and Fixes
+
+The login form includes a Remember Me checkbox which is linked to a variable of the same name in the forms.py file under the class LoginForm. This checkbox does not display correctly when viewed in developer tools and this issue has not been resolved due to priorities and timescale. 
+
+The CSS classes of 'success' and 'warning' which are meant to display different colours depending on the flash messages either telling the user that they have been successful in a task 'success' or that they have encountered an error 'warning'. These two classes unfortunately do not display their respective colours when triggered by a flash message and subsiquently all flash messages are displayed by a fern green #66bb6a.
+
+#### Testing User Stories
+
+* First Time Visitor Goals:
+
+    * To understand how the site works and what its about.
+
+        * Upon entering the home page the user will see the site name/logo in the top left hand corner of the navigation bar, the name indicates to the user what the website/application is and does. The navigation bar links clearly identify what page is which without ambiguity. 
+
+    * How to navigate the site.
+
+        * The navigation bar links are clearly visible in the top right hand corner, each link tells the user what page is which.
+
+    * Create an account and start posting new messages.
+
+        * The user simply clicks on the link marked 'register' and is prompted to input their details to create an account to which they are redirected back to the login page to sign-in to then start posting new messages via the 'New Posts' link in the navbar which is only visible when the user has successfully logged in. 
+
+* Returning Visitor Goals:
+
+    * Log in and out of accounts.
+
+        * After a user has logged in to their account they are automatically redirected back to the home page after which the logout navigation link becomes available whereby if the user clicks on the logout navigation link they are automatically logged out and redirected back to the home page.
+
+    * Read posts made by other users.
+
+        * A user can read posts made by other users which are viewed on the home page. 
+
+    * Update and delete posts made by the user.
+
+        * The user has the option to update a post by clicking on the post's title where they are sent to another form where the user can change/update the post's title and content. The option to delete a post entirely is also available via the post's title where both options to update and delete are visible in the form of two button. The delete button once clicked will prompt a modal popup asking the user if they want to delete the post where another delete button is visible to the user to click and the post is deleted entirely.
+
+#### Further Testing
+
+* All pages that make up the website/application were tested using Chrome Developer Tools to check for responsivness at the various different breakpoints to see how the site would react to being viewed on different devices.
+
+* The website was viewed on various different devices such as Desktop, Laptop, Google Nexus 7 tablet and my Blackview BV6000 Android phone.
+
+* Friends and family members were asked to review the site to highlight any bugs or user experience issues.
+
+#### Manual Testing
+
+* All throughout the development process as previously mentioned each page was consistently checked to make sure that they responded correctly to the various default breakpoints built into Chrome Developer Tools.
+
+* The logo was clicked in each page to make sure that it was correctly linked to the home page.
+
+* Each navigation bar link on each page was clicked to verify that it not only worked but took you to the correct page.
+
+| TEST | OUTCOME | PASS/FAIL|
+|:---:|:---:|:---:|
+| Create Account | Account created via register form | Pass | 
+| Post Message on Home Page | Post successfully created and displated | Pass |
+| Edit Message | Post title clicked and via update post button redirected to Edit Post form to update post | Pass |
+| Delete User's Message | Post title clicked and via delete button shown modal to warn user and press delete | Pass |
+| Login | Login successful | Pass |
+| Logout | Logout successfull | Pass |
+| View Other User's Posts | Created several accounts to view different posts on home page | Pass |
+| View Account Details | Details such as username and email address visible in accounts page | Pass |
+ 
 ## Deployment & Local Development
 
-### Deployment
+### GitHub Deployment
 
 The website/application is stored using GitHub for data and version control. To do this you follow these steps:
 
