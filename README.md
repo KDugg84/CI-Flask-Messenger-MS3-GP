@@ -190,6 +190,22 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 ### Validation
 
+The W3C Markup Validation Service was used on all HTML pages as well as the CSS Validator.
+
+#### Python Testing
+
+Python PEP8 validation was done via Code Institue's Python Linter
+
+The files that were tested:
+
+* forms.py
+
+* models.py
+
+* routes.py
+
+The only errors recieved were some lines of text exceeded the character limit of 79 and some areas of trailing white space where comments are located.
+
 ### Bugs and Errors
 
 #### Known Issues and Fixes
