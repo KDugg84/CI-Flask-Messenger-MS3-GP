@@ -112,7 +112,15 @@ The default avatar image that a user gets when they have created an account came
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+The wireframes were created using Balsamiq desktop for Windows 10:
+
+* [Home Page](flaskmessenger/static/img/wireframes/Home%20Page.png)
+
+* [About Page](flaskmessenger/static/img/wireframes/About%20Page.png)
+
+* [Login Page](flaskmessenger/static/img/wireframes/Login%20Page.png)
+
+* [Register Page](flaskmessenger/static/img/wireframes/Register%20Page.png)
 
 ## Features
 
@@ -206,9 +214,33 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 The W3C Markup Validation Service was used on all HTML pages as well as the CSS Validator.
 
-#### Python Testing
+HTML Results:
 
-Python PEP8 validation was done via Code Institue's Python Linter
+The validator flagged the lines where the Python logic is used by the jinja templating engine, the example below is just one example that was highlighted with the base template and other HTML pages
+
+* [Base](flaskmessenger/static/img/validation/Base%20Validation%20Result.PNG)
+
+The img tags were missing alt attributes, those have been added the below pages.
+
+* [Home](flaskmessenger/static/img/validation/Home%20Validation%20Result.PNG)
+
+* [Account](flaskmessenger/static/img/validation/Account%20Validation%20Result.PNG)
+
+* [Posts](flaskmessenger/static/img/validation/Posts%20Validation%20Result.PNG)
+
+Both Login, Register and New Posts pages were flagged for the action attribute's empty spacing.
+
+* [Login & Register](flaskmessenger/static/img/validation/Login%20&%20Register%20Validation%20Result.PNG)
+
+* [New Posts](flaskmessenger/static/img/validation/New%20Posts%20Validation%20Result.PNG)
+
+CSS Result:
+
+* [Style](flaskmessenger/static/img/validation/CSS%20Validation%20Result.PNG)
+
+### Python Testing
+
+Python PEP8 validation was done via Code Institue's Python Linter.
 
 The files that were tested:
 
@@ -220,13 +252,21 @@ The files that were tested:
 
 The only errors recieved were some lines of text exceeded the character limit of 79 and some areas of trailing white space where comments are located.
 
+### Lighthouse
+
+Results:
+
+* [Mobile](flaskmessenger/static/img/validation/Lighthouse%20Mobile.PNG)
+
+* [Desktop](flaskmessenger/static/img/validation/Lighthouse%20Desktop.PNG)
+
 ### Bugs and Errors
 
 #### Known Issues and Fixes
 
 The login form includes a Remember Me checkbox which is linked to a variable of the same name in the forms.py file under the class LoginForm. This checkbox does not display correctly when viewed in developer tools and this issue has not been resolved due to priorities and timescale. 
 
-The CSS classes of 'success' and 'warning' which are meant to display different colours depending on the flash messages either telling the user that they have been successful in a task 'success' or that they have encountered an error 'warning'. These two classes unfortunately do not display their respective colours when triggered by a flash message and subsiquently all flash messages are displayed by a fern green #66bb6a.
+The CSS classes of 'success' and 'warning' which are meant to display different colours depending on the flash messages either telling the user that they have been successful in a task 'success' or that they have encountered an error 'warning', these two classes unfortunately do not display their respective colours when triggered by a flash message and subsiquently all flash messages are displayed by a fern green #66bb6a.
 
 #### Testing User Stories
 
@@ -348,22 +388,6 @@ To copy a Github repository:
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
-
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-
-### Content
-
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
-
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
-  
 ###  Acknowledgments
-
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
