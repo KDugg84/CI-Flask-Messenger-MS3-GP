@@ -8,9 +8,9 @@ The main focus of the project is backend development which included the use of a
 
 I chose this project because messaging sites/applications are perfect examples of C.R.U.D (Create, Read, Update and Delete) functionality. The site was designed more to be viewed on small screen devices to try to mimic other messaging apps.
 
-[AmIResponsive](https://ui.dev/amiresponsive)
+![AmIResponsive](flaskmessenger/static/img/Am%20I%20Responsive.PNG)
 
-[View the live site here]()
+[View the live site here](https://ci-flask-messenger-app-59224e32ef26.herokuapp.com/)
 
 ## CONTENTS
 
