@@ -108,6 +108,8 @@ The main font used throughout the project is the default style that comes with t
 
 Imagery does not really feature with this application other than the default profile picture that is added to a user's account when they sigh up.
 
+The default avatar image that a user gets when they have created an account came from here [Default Profile Images](https://stock.adobe.com/es/search?k=%22default+profile+picture%22)
+
 ### Wireframes
 
 Add the images or links for your wireframes here.
