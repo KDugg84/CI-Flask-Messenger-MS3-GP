@@ -266,6 +266,8 @@ The login form includes a Remember Me checkbox which is linked to a variable of 
 
 The CSS classes of 'success' and 'warning' which are meant to display different colours depending on the flash messages either telling the user that they have been successful in a task 'success' or that they have encountered an error 'warning', these two classes unfortunately do not display their respective colours when triggered by a flash message and subsiquently all flash messages are displayed by a fern green #66bb6a.
 
+The name 'Flask Messenger' was only meant to be the development name and was due to be changed before submission but due to time constraints this was never changed and as a result the name/logo is too big for the navigation bar when viewed on mobile devices.
+
 #### Testing User Stories
 
 * First Time Visitor Goals:
