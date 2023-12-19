@@ -42,8 +42,6 @@ Add a link to the live site here.
 
 * [Credits](#credits)
   * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
 ---
@@ -124,7 +122,7 @@ The wireframes were created using Balsamiq desktop for Windows 10:
 
 ## Features
 
-### General features on each page
+### General Features on Each Page
 
 The general features of most of the app's pages include: 
 
@@ -390,4 +388,14 @@ To copy a Github repository:
 
 ### Code Used
 
+[Materialize](https://materializecss.com/) was used to create the navigation bar, footer and popup modal.
+
+[Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/) was used throughout the project to help develop the various Python forms, models and routes files.
+
 ###  Acknowledgments
+
+* Jubril Akolade (My stand-in mentor for Chris) - for offering guidence and support for the project from it's inception, development and deployment.
+
+* Code Institute student cohort on Slack - always offering help and solutions.
+
+* Callum Jones - for offering helpful advice and tips.
