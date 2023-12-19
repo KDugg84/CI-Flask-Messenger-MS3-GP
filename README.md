@@ -2,9 +2,9 @@
 
 # Flask Messenger (Development Name)
 
-For my third Milestone project (MS3) I decided to create a messaging site/application that allows users to register for an account where user's can create posts which can then be viewed on the main home page. These posts can also be read by other users, also updated and or deleted but only by the user who submitted the original post.
+For my third milestone project (MS3) I decided to create a messaging site/application that allows users to register for an account where user's can create posts which can then be viewed on the main home page. These posts can also be read by other users, also updated and or deleted but only by the user who submitted the original post.
 
-The main focus of the project was backend development which included the use of a database such as PostreSQL to store user's information and posts and the Flask framework which is a Python based framework which allows developers to insert Python logic into the frontend.
+The main focus of the project is backend development which included the use of a database such as PostreSQL to store user's information and posts and the Flask framework which is a Python based framework which allows developers to insert Python logic into the frontend.
 
 I chose this project because messaging sites/applications are perfect examples of C.R.U.D (Create, Read, Update and Delete) functionality. The site was designed more to be viewed on small screen devices to try to mimic other messaging apps.
 
@@ -100,13 +100,13 @@ Main colours include:
 
 ### Typography
 
-The main font used throughout the project is the default style that comes with the WT-Forms Flask extension.
+The main font used throughout the project is the default style that comes with both Gitpod and the WT-Forms Flask extension.
 
 ### Imagery
 
-Imagery does not really feature with this application other than the default profile picture that is added to a user's account when they sigh up.
+Imagery does not really feature with this application other than the default profile picture that is added to a user's account when they sign up.
 
-The default avatar image that a user gets when they have created an account came from here [Default Profile Images](https://stock.adobe.com/es/search?k=%22default+profile+picture%22)
+The default avatar image that a user gets when they create an account came from here [Default Profile Images](https://stock.adobe.com/es/search?k=%22default+profile+picture%22)
 
 ### Wireframes
 
@@ -146,7 +146,7 @@ Other features included in the 'Register' and 'Login' pages are:
 
 * As with the register page the login form includes a link at the bottom asking the user if they need an account in case they have clicked on the wrong page by accident.
 
-After a user has successfully logged in they will see a new link in the navbar called 'New Posts':
+After a user has successfully logged in they will see a new link in the navigation bar called 'New Posts':
 
 * The new posts form has two fields one for 'Title' and for 'Content'.
 
@@ -201,9 +201,9 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/) the main Python framework used throughout the project.
 * [WTForms](https://flask.palletsprojects.com/en/3.0.x/patterns/wtforms/) was used to help with form validation.
 * [Bcrypt](https://pypi.org/project/bcrypt/) a hash function designed for password hashing and safe storing in the backend of applications.
-* [PEP8 Validator](https://pep8ci.herokuapp.com/) Used to check python code for errors
-* [ElephandSQL](https://www.elephantsql.com/) Used to store PostgreSQL database.
-* [Heroku](https://id.heroku.com/) Used to deploy the project
+* [PEP8 Validator](https://pep8ci.herokuapp.com/) was used to check python code for errors
+* [ElephandSQL](https://www.elephantsql.com/) was used to store PostgreSQL database.
+* [Heroku](https://id.heroku.com/) was used to deploy the project.
 * [Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
 
 ## Testing
@@ -214,7 +214,7 @@ The W3C Markup Validation Service was used on all HTML pages as well as the CSS 
 
 HTML Results:
 
-The validator flagged the lines where the Python logic is used by the jinja templating engine, the example below is just one example that was highlighted with the base template and other HTML pages
+The validator flagged the lines where the Python logic is used by the jinja templating engine, below is just one example that was highlighted with the base template and other HTML pages
 
 * [Base](flaskmessenger/static/img/validation/Base%20Validation%20Result.PNG)
 
@@ -226,7 +226,7 @@ The img tags were missing alt attributes, those have been added the below pages.
 
 * [Posts](flaskmessenger/static/img/validation/Posts%20Validation%20Result.PNG)
 
-Both Login, Register and New Posts pages were flagged for the action attribute's empty spacing.
+Login, Register and New Posts pages were flagged for the action attribute's empty spacing.
 
 * [Login & Register](flaskmessenger/static/img/validation/Login%20&%20Register%20Validation%20Result.PNG)
 
@@ -248,7 +248,7 @@ The files that were tested:
 
 * routes.py
 
-The only errors recieved were some lines of text exceeded the character limit of 79 and some areas of trailing white space where comments are located.
+The only errors received were some lines of text exceeded the character limit of 79 and some areas of trailing white space where comments are located.
 
 ### Lighthouse
 
@@ -370,7 +370,7 @@ To copy a Github repository:
 
 * On the next page choose a name for your app (same as the project name), choose a region then click "Create App".
 
-* On the settings tab click on Reveal Config Vars and add the Key Port and the value 8000, Debug Key should be set to False and also include the URL address of the Postgres Database hosting platform for storing the database. 
+* On the settings tab click on Reveal Config Vars and add the Key Port and the value 8000, Debug Key should be set to False in the env.py file beforehand and also include the URL address of the Postgres Database hosting platform for storing the database. 
 
 #### Deployment of The App
 
