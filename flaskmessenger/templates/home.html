@@ -3,7 +3,7 @@
 {% for post in posts %}
 <article>
     <div class="content-section">
-        <img class="account-img" src="{{ url_for('static', filename='img/' + post.author.profile_image) }}">
+        <img class="account-img" src="{{ url_for('static', filename='img/' + post.author.profile_image) }}" alt="profile picture">
         <div class="content-metadata">
             <a href="#">{{ post.author.username }}</a>
             <small>{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
