@@ -2,15 +2,15 @@
 
 # Flask Messenger (Development Name)
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive)
-
 For my third Milestone project (MS3) I decided to create a messaging site/application that allows users to register for an account where user's can create posts which can then be viewed on the main home page. These posts can also be read by other users, also updated and or deleted but only by the user who submitted the original post.
 
 The main focus of the project was backend development which included the use of a database such as PostreSQL to store user's information and posts and the Flask framework which is a Python based framework which allows developers to insert Python logic into the frontend.
 
 I chose this project because messaging sites/applications are perfect examples of C.R.U.D (Create, Read, Update and Delete) functionality. The site was designed more to be viewed on small screen devices to try to mimic other messaging apps.
 
-Add a link to the live site here.
+[AmIResponsive](https://ui.dev/amiresponsive)
+
+[View the live site here]()
 
 ## CONTENTS
 
